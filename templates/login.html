@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Registo</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Iniciar Sessão</title>
+{% endblock %}
+{% block conteudo %}
 <center>
     <h1>Iniciar Sessão</h1>
     <form method="post">
@@ -21,15 +19,4 @@
     </form>
     {% if erro %}<h4>{{ erro }}</h4>{% endif %}
 </center>
-
-
-
-</fieldset>
-
-{% if erro %}
-{{ erro }}
-{% endif %}
-
-</body>
-</html>
-
+{% endblock %}

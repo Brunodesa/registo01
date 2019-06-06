@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Registo</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-<h1>Alterar a Passe</h1>
+<h1>Alterar a Password</h1>
 <fieldset>
     <legend>Introduza os seus dados</legend>
     <form method="post">
@@ -17,16 +17,9 @@
         <h4>Confirme a Passe</h4>
         <input type='password' name='cpasse' required>
         <p><br></p>
-        <input type="submit" value="Submeter">
+        <input type='submit' value="Submeter">
     </form>
-
-
-
 </fieldset>
-
-{% if erro %}
-{{ erro }}
-{% endif %}
-
+{% if erro %}<h1>{{ erro }}</h1>{% endif %}
 </body>
 </html>
