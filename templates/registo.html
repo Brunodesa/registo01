@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <title>Registo</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
-<h1>Criar nova Conta</h1>
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Criar Nova Conta</title>
+{% endblock %}
+{% block conteudo %}
+<center>
+    <h1>Criar Nova Conta</h1>
 <fieldset>
     <legend>Introduza os seus dados</legend>
     <form method="post">
@@ -22,6 +20,6 @@
         <input type='submit' value="Submeter">
     </form>
 </fieldset>
-{% if erro %}<h1>{{ erro }}</h1>{% endif %}
-</body>
-</html>
+    {% if erro %}<h4>{{ erro }}</h4>{% endif %}
+</center>
+{% endblock %}
