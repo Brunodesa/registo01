@@ -2,8 +2,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 {% block titulo %}
 {% endblock %}
+
+
 
 <script>
 function w3_open() {
@@ -19,6 +22,8 @@ function w3_close() {
 
 </head>
 
+
+
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
@@ -31,8 +36,8 @@ function w3_close() {
     <div class="w3-dropdown-hover">
         <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block">
-            <a href="#" class="w3-bar-item w3-button">Link</a>
-            <a href="#" class="w3-bar-item w3-button">Link</a>
+            <a href="#" class="w3-bar-item w3-button">...</a>
+            <a href="#" class="w3-bar-item w3-button">...</a>
         </div>
     </div>
 </div>
@@ -49,22 +54,32 @@ function w3_close() {
 {% block conteudo %}
 {% endblock %}
 
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+
+
 <!---INICIO FOOTER--->
-<body class="footer">
+<div class="footer">
     <br>
     <br>
     <br>
     <br>
-    <p>Footer</p>
+    <br>
+    <br>
+    <br>
     <a class="twitter" href="https://twitter.com/login"><i class="fab fa-twitter"></i></i></a>
     <a class="facebook" href="https://pt-pt.facebook.com/"><i class="fab fa-facebook-f"></i></i></a>
     <a class="instagram" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
     <a class="youtube" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+
     <center>
-        <small>&copy; Copyright 2019 Bruno Gallego</small>
+    <small>&copy; Copyright 2019 Bruno Gallego</small>
     </center>
 
-
-
-</body>
+</div>
 </html>
+
+
